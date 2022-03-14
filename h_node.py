@@ -37,7 +37,7 @@ class h_node:
 
 
 class move_node:
-    def __init__(self, current : List[str], prev):
+    def __init__(self, current: List[str], prev):
         self.current = current
         self.prev = prev
 
@@ -50,7 +50,7 @@ class move_node:
         # and self.prev==__o.prev
 
     def __eq__(self, __o: object) -> bool:
-        return isinstance(__o,move_node)and self.current==__o.current
+        return isinstance(__o, move_node) and self.current == __o.current
 
     def __ne__(self, __o: object) -> bool:
-        return not self==__o
+        return not self == __o
